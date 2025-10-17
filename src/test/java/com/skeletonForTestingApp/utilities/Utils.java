@@ -1,4 +1,4 @@
-package com.skeletonForTestingApp.utils;
+package com.skeletonForTestingApp.utilities;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -18,6 +18,14 @@ public class Utils {
         By xpath = By.xpath(String.format("//*[contains(text(),'%s')]", text));
         WebDriverWait driverWait = new WebDriverWait(driver, duration);
         driverWait.until(ExpectedConditions.presenceOfElementLocated(xpath));
+    }
+
+    public void refreshPage() {
+        driver.navigate().refresh();
+    }
+
+    public void backButton() {
+        driver.navigate().back();
     }
 
 }

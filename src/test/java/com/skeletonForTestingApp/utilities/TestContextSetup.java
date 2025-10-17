@@ -1,4 +1,4 @@
-package com.skeletonForTestingApp.utils;
+package com.skeletonForTestingApp.utilities;
 
 import com.skeletonForTestingApp.pageObjects.PageObjectManager;
 import org.openqa.selenium.WebDriver;

@@ -1,4 +1,4 @@
-package com.skeletonForTestingApp.utils;
+package com.skeletonForTestingApp.utilities;
 
 import org.openqa.selenium.chrome.ChromeOptions;
 
