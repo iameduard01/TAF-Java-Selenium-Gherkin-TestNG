@@ -1,6 +1,6 @@
 package com.skeletonForTestingApp.stepDefinitions;
 
-import com.skeletonForTestingApp.utils.TestContextSetup;
+import com.skeletonForTestingApp.utilities.TestContextSetup;
 import io.cucumber.java.After;
 import io.cucumber.java.AfterStep;
 import io.cucumber.java.Scenario;
