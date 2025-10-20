@@ -1,8 +1,11 @@
 Feature: LoginPage
 
-  Scenario: Check user is on login page
-    Given I get to op.europa.eu
-    Then I check if the title is European Parliament
-    Then I click on login button
-    Then I check if I land on Login page
+  Scenario:  Check user is able to login with valid credentials
+    Given user navigates to European Union home page
+    When user logs in with "valid" credentials
+    Then the user has successfully logged in
 
+  Scenario:  Check user able to login with invalid credentials
+    Given user navigates to European Union home page
+    When user logs in with "invalid" credentials
+    Then the user has unsuccessfully logged in

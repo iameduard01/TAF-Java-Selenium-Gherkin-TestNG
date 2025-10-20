@@ -28,19 +28,19 @@ public class RegistationPage {
         utils = new Utils(driver);
     }
 
-    @FindBy(id = "_eu_europa_publications_portlet_user_registration_UserRegistrationPortlet_INSTANCE_nFGwDJ8p6Q24_firstName")
+    @FindBy(xpath = "//input[contains(@id,'firstName')]")
     private WebElement firstName;
 
-    @FindBy(id ="_eu_europa_publications_portlet_user_registration_UserRegistrationPortlet_INSTANCE_nFGwDJ8p6Q24_lastName")
+    @FindBy(xpath ="//input[contains(@id,'lastName')]")
     private WebElement lastName;
 
-    @FindBy(id = "_eu_europa_publications_portlet_user_registration_UserRegistrationPortlet_INSTANCE_nFGwDJ8p6Q24_email2")
+    @FindBy(xpath = "//input[contains(@id,'email2')]")
     private WebElement email;
 
-    @FindBy(id = "_eu_europa_publications_portlet_user_registration_UserRegistrationPortlet_INSTANCE_nFGwDJ8p6Q24_password")
+    @FindBy(xpath = "//input[@title='Password']")
     private WebElement password;
 
-    @FindBy(id = "_eu_europa_publications_portlet_user_registration_UserRegistrationPortlet_INSTANCE_nFGwDJ8p6Q24_passwordconfirm")
+    @FindBy(xpath = "//input[@title=\"Password confirmation\"]")
     private WebElement confirmPassword;
 
     @FindBy(xpath = "//label[contains(.,\"I read and understood\")]")
@@ -57,7 +57,7 @@ public class RegistationPage {
         assertEquals(true, driver.getPageSource().contains("Create an account"));
     }
 
-    public String fillRegistrationForm() throws InterruptedException {
+    public void fillRegistrationForm() {
         utils.waitForTextToAppear("Create an account", Duration.ofSeconds(3));
         Properties properties = new Properties();
         try {
@@ -70,7 +70,6 @@ public class RegistationPage {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return null;
     }
 
     public void clickOnTermsCheckBox() {

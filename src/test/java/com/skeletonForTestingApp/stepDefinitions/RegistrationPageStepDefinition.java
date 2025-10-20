@@ -5,6 +5,7 @@ import com.skeletonForTestingApp.pageObjects.RegistationPage;
 import com.skeletonForTestingApp.utilities.TestContextSetup;
 import io.cucumber.java.PendingException;
 import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 
 public class RegistrationPageStepDefinition {
     private TestContextSetup testContextSetup;
@@ -38,5 +39,10 @@ public class RegistrationPageStepDefinition {
     @Then("Check for the confirmation message")
     public void checkForTheConfirmationMessage() {
         registationPage.checkConfirmationMessage();
+    }
+
+    @When("user fill in the registration form")
+    public void userFillInTheRegistrationForm() {
+
     }
 }

@@ -1,5 +1,4 @@
 Feature: Registration page
-@test
   Scenario: Register a user
     Given I get to op.europa.eu
     Then I check if the title is European Parliament
@@ -11,3 +10,10 @@ Feature: Registration page
     Then I click on terms check box
     Then I click on register button
     Then Check for the confirmation message
+
+
+    Scenario: Check user is able to register with valid credentials
+      Given user navigates to European Union home page
+      When user fill in the registration form
+      Then user received the confirmation mail
+

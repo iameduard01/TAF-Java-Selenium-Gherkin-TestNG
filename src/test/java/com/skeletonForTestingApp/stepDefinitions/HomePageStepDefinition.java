@@ -16,14 +16,9 @@ public class HomePageStepDefinition {
         this.homePage = testContextSetup.getPageObjectManager().getHomePage();
     }
 
-    @Given("I get to op.europa.eu")
-    public void iGetToOpEuropaEu() {
+    @Given("user navigates to European Union home page")
+    public void userNavigatesToEuropeanUnionHomePage() {
         homePage.getToHomePage();
-    }
-
-    @Then("I check if the title is European Parliament")
-    public void iCheckIfTheTitleIsEuropeanParliament() {
-        homePage.validateTitle();
     }
 
     @When("I click on login button")
