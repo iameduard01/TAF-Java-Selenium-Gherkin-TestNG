@@ -50,8 +50,8 @@ public class HomePage {
 
     public void getToHomePage() {
         driver.get(getHomePageLink());
+        validateTitle();
     }
-
     public void validateTitle(){
         wait.until(ExpectedConditions.titleIs("Home - Publications Office of the EU"));
         Assert.assertEquals(driver.getCurrentUrl(), getHomePageLink());
