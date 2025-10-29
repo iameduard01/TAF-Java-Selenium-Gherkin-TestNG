@@ -1,5 +1,8 @@
-package com.skeletonForTestingApp.pageObjects;
+package com.skeletonForTestingApp.pages.pageManager;
 
+import com.skeletonForTestingApp.pages.HomePage;
+import com.skeletonForTestingApp.pages.LoginPage;
+import com.skeletonForTestingApp.pages.RegistationPage;
 import org.openqa.selenium.WebDriver;
 
 public class PageObjectManager {

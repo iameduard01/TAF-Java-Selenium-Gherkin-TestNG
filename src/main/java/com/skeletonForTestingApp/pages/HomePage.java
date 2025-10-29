@@ -1,6 +1,6 @@
-package com.skeletonForTestingApp.pageObjects;
+package com.skeletonForTestingApp.pages;
 
-import com.skeletonForTestingApp.utilities.Utils;
+import com.skeletonForTestingApp.utils.Utils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;

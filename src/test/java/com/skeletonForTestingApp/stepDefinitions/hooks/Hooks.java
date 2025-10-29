@@ -1,6 +1,6 @@
-package com.skeletonForTestingApp.stepDefinitions;
+package com.skeletonForTestingApp.stepDefinitions.hooks;
 
-import com.skeletonForTestingApp.utilities.TestContextSetup;
+import com.skeletonForTestingApp.context.TestContextSetup;
 import io.cucumber.java.After;
 import io.cucumber.java.AfterStep;
 import io.cucumber.java.Scenario;
@@ -21,7 +21,7 @@ public class Hooks {
 
     @After
     public void afterScenario() {
-        testContextSetup.getWebdriverConfiguration().getWebdriver().quit();
+        this.testContextSetup.getWebdriverConfiguration().getWebdriver().quit();
     }
 
     @AfterStep
@@ -33,6 +33,4 @@ public class Hooks {
             scenario.attach(bytes, "image/png", "image");
         }
     }
-
-
 }

@@ -1,4 +1,4 @@
-package com.skeletonForTestingApp.utilities;
+package com.skeletonForTestingApp.utils;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

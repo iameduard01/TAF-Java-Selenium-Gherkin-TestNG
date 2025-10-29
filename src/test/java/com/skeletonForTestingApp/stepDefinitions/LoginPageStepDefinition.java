@@ -1,10 +1,8 @@
 package com.skeletonForTestingApp.stepDefinitions;
 
-import com.skeletonForTestingApp.pageObjects.HomePage;
-import com.skeletonForTestingApp.pageObjects.LoginPage;
-import com.skeletonForTestingApp.utilities.TestContextSetup;
-import io.cucumber.java.PendingException;
-import io.cucumber.java.en.Given;
+import com.skeletonForTestingApp.pages.HomePage;
+import com.skeletonForTestingApp.pages.LoginPage;
+import com.skeletonForTestingApp.context.TestContextSetup;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 

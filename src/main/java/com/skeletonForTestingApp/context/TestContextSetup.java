@@ -1,6 +1,8 @@
-package com.skeletonForTestingApp.utilities;
+package com.skeletonForTestingApp.context;
 
-import com.skeletonForTestingApp.pageObjects.PageObjectManager;
+import com.skeletonForTestingApp.driver.WebDriverConfiguration;
+import com.skeletonForTestingApp.pages.pageManager.PageObjectManager;
+import com.skeletonForTestingApp.utils.Utils;
 import org.openqa.selenium.WebDriver;
 
 public class TestContextSetup {
